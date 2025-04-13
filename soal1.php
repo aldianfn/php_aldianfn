@@ -1,7 +1,7 @@
 <?php
 
 $jml = $_GET['jml'];
-echo "<table border=1>\n";
+echo "<table border=1 style='border-collapse:collapse;'>\n";
 for ($a = $jml; $a > 0; $a--) {
     $total = 0;     // Deklarasi variabel total untuk menyimpan total angka
     $value = [];    // Deklarasi variabel value untuk menyimpan setiap pengurangan angka dari $jml
@@ -14,7 +14,7 @@ for ($a = $jml; $a > 0; $a--) {
     }
 
     // Tampil hasil total
-    echo "<tr><td colspan='$jml'>Total: $total</td></tr>";
+    echo "<tr><td colspan='$jml'>TOTAL: $total</td></tr>";
 
     // Tampil hasil pengurangan angka dari $jml
     echo "<tr>";
